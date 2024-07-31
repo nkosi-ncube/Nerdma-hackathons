@@ -42,7 +42,7 @@ The proposed platform will integrate AI-driven features to address the identifie
 - **Ingest Payment Data:** Extract and aggregate payment data from various sources (bank statements, payment gateways).
 - **Invoice Reconciliation:** Use NLP and machine learning to match payments with invoices based on amounts, dates, and reference numbers.
 - **Anomaly Detection:** Detect and flag mismatches or anomalies in payment records.
-- **Document Verification:** Validate the accuracy and legitimacy of invoice and payment documents.
+- **Document Verification:** Validate the accuracy and legitimacy of invoice and payment documents using **Google Cloud Storage** for document storage and **Gemini Vision** for AI-powered analysis.
 
 ### Cart Abandonment Reduction
 
@@ -53,9 +53,9 @@ The proposed platform will integrate AI-driven features to address the identifie
 
 ### Document Validation
 
-- **Document Ingestion:** Automate the intake and categorization of legal documents.
+- **Document Ingestion:** Automate the intake and categorization of legal documents using **Google Cloud Storage**.
 - **Validity Checks:** Use AI to monitor expiration dates and compliance status.
-- **Authenticity Verification:** Implement AI tools to verify document authenticity against legal standards or databases.
+- **Authenticity Verification:** Implement AI tools to verify document authenticity using **Gemini Vision**.
 - **Alert System:** Notify relevant departments about document renewals or compliance requirements.
 
 ---
@@ -71,20 +71,23 @@ The proposed platform will integrate AI-driven features to address the identifie
 ### Design & Development
 
 - **Automated Invoice Matching:**
-  - Develop AI models for reconciliation and document verification.
-  - Create a user-friendly interface for managing reconciliations and validations.
+  - Develop AI models for reconciliation and document verification using **Python**.
+  - Create a user-friendly interface for managing reconciliations and validations using **React**.
+  - Integrate with **Google Cloud Storage** for storing documents and **Gemini Vision** for document analysis.
+
 - **Cart Abandonment Reduction:**
-  - Build AI algorithms for personalized reminders, dynamic pricing, and chatbots.
-  - Develop gamification features and interactive elements.
+  - Build AI algorithms for personalized reminders, dynamic pricing, and chatbots using **Python**.
+  - Develop gamification features and interactive elements using **React**.
+
 - **Document Validation:**
-  - Develop AI models for document categorization, validity checks, and authenticity verification.
-  - Create dashboards and alert systems for document management.
+  - Develop AI models for document categorization, validity checks, and authenticity verification using **Python**.
+  - Create dashboards and alert systems for document management using **React**.
 
 ### Integration
 
-- **Automated Invoice Matching:** Connect with accounting software and payment gateways.
-- **Cart Abandonment Reduction:** Integrate with eCommerce platforms.
-- **Document Validation:** Integrate with HR management systems and legal databases.
+- **Automated Invoice Matching:** Connect with accounting software and payment gateways using **Django Rest Framework** for backend services.
+- **Cart Abandonment Reduction:** Integrate with eCommerce platforms using **Django Rest Framework**.
+- **Document Validation:** Integrate with HR management systems and legal databases using **Django Rest Framework**.
 
 ### Testing & Optimization
 
