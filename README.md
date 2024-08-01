@@ -38,5 +38,15 @@
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/smartfarm360.git
-   cd smartfarm360
+   git clone https://github.com/nkosi-ncube/Nerdma-hackathons.git
+   cd backend
+   pip install -r requirements.txt
+   python manage.py migrate
+   python manage.py runserver
+   cd ../frontend
+   npm install
+  npm start
+```
+IOT Configurations not ready
+
+
