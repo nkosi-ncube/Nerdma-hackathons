@@ -46,6 +46,7 @@
    cd ../frontend
    npm install
   npm start
+
 ```
 IOT Configurations not ready
 
