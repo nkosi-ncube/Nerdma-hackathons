@@ -57,7 +57,7 @@ def auction_verification(request):
     
     if serializer.is_valid():
         image_url = serializer.validated_data['image']
-        prompt = serializer.validated_data.get('prompt', "Evaluate the health and suitability of the livestock for auction based on this image of medical record of the particular livestock.")
+        prompt = serializer.validated_data.get('prompt',  "Evaluate the health and suitability of the livestock for auction based on this image of medical record of the particular livestock. please respond with eligible or not eligible only do not explain")
         
         try:
             # Prepare the message for the OpenAI chat completion
